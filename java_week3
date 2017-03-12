@@ -1,0 +1,35 @@
+class Rectangle{
+	double width;
+	double height;
+	Rectangle(){
+		width=1;
+		height=1;
+	}
+Rectangle(double wid,double hei){
+	width=wid;
+	height=hei;
+}
+
+ double getRec(){
+	double Area;
+	Area = width*height;
+	System.out.print("The area of the given Rectangle is:\n "+ Area+"\n");
+	return Area;
+}
+ double getPerimeter(){
+	 double Perimeter;
+	 Perimeter=(width+height)/2;
+	 System.out.println("The Perimeter of the given Rectangle is:\n "+Perimeter+"\n");
+	 return Perimeter;
+ }
+}
+public class demo{
+	public static void main(String []args){
+		Rectangle rec= new Rectangle(4,40);
+		Rectangle rec1=new Rectangle(3.5,35.9);
+		rec.getRec();
+		rec.getPerimeter();
+		rec1.getRec();
+		rec1.getPerimeter();
+	}
+}
